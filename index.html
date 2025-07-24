@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b01133dbf6.js" crossorigin="anonymous"></script>
     <style>
         #nav-title {
             font-family: "Dancing Script", cursive;
@@ -31,7 +32,7 @@
 <body class="">
     <div class="navbar bg-base-100 shadow-sm fixed top-0">
         <div class="flex-1 justify-center ">
-            <a class="btn btn-ghost  text-[3.5rem]" href="#intro"><span id="nav-title">Arannamoy
+            <a class="btn btn-ghost  text-[3.5rem]" href="#intro"><span id="nav-title" id="my-name">Arannamoy
                     Mondal</span></a>
         </div>
         <div class="">
@@ -39,13 +40,13 @@
                 <li><a href="#skills" class="text-[2rem]">Skills</a></li>
                 <li><a href="#education" class="text-[2rem]">Education</a></li>
                 <li><a href="" class="text-[2rem]">Projects</a></li>
-                <li><a href="" class="text-[2rem]">Contact Me</a></li>
+                <li><a href="#contact-me" class="text-[2rem]">Connect With Me</a></li>
                 <li><a href="" class="text-[2rem]"></a></li>
                 <li>
                     <a class="flex justify-center items-center">
                         <label class="swap swap-rotate">
                             <!-- this hidden checkbox controls the state -->
-                            <input type="checkbox" class="theme-controller" value="dark" />
+                            <input id="abcd1234" onclick=toggleMode(event) type="checkbox" class="theme-controller" value="dark" />
 
                             <!-- sun icon -->
                             <svg class="swap-off h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -151,23 +152,31 @@
         </ul>
     </div>
     <div id="contact-me">
-        <hr />
-        <div>
-            <a href="">
-                <canvas id="canvas3" width="400" height="400"></canvas>
-                <script type="module">
-                    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+        <h1 class="text-[3rem] font-bold text-center">Connect With Me</h1>
+        <hr class="w-[50%] m-auto py-[10px]" />
 
-                    new DotLottie({
-                        autoplay: true,
-                        loop: true,
-                        canvas: document.getElementById("canvas3"),
-                        src: "./Lottie/Discord logo.lottie", // or .json file
-                    });
-                </script>
+        <div class="flex justify-center items-center">
+            <a href="" target="_blank">
+                <img src="./Icon/discord-brands-solid-full.svg" alt="" style="width: 50px;height: 50px;color: blue;">
+            </a>
+            <a href="mailto:arannamoymondal13@gmail.com">
+                <img src="./Icon/envelope-solid-full.svg" id="mail-icon" alt="" style="width: 50px;height: 50px;">
+            </a>
+            <a href="https://arannamoymondal.medium.com/" target="_blank">
+                <img src="./Icon/medium-brands-solid-full.svg" id="medium-icon" alt=""
+                    style="width: 50px;height: 50px;">
+            </a>
+            <a href="https://github.com/Arannamoy-Mondal/" target="_blank">
+                <img src="./Icon/github-brands-solid-full.svg" id="github-icon" alt=""
+                    style="width: 50px;height: 50px;">
+            </a>
+            <a href="https://gitlab.com/arannamoy-mondal" target="_blank">
+                <img src="./Icon/gitlab-brands-solid-full.svg" alt="" style="width: 50px;height: 50px;">
             </a>
         </div>
+        <input type="checkbox" name="" >
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
