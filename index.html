@@ -131,8 +131,10 @@
 
         <div class="flex lg:flex-row flex-col-reverse flex-wrap items-center justify-center">
             <div class="w-[70%]">
-                <br>
-                <br><br><br><br><br>
+                <div class="adjustment-heading lg:block hidden">
+                    <br>
+                    <br><br><br><br><br>
+                </div>
                 <h1 class="lg:text-[4.5rem] md:text-[3.5rem] text-[2rem]">Hello! I'm Arannamoy Mondal.</h1>
                 <h1 class="lg:text-[2rem] md:text-[1rem] text-[.85rem]">Passionate about advanced cutting edge
                     technologies, with a strong focus on high-frequency trading algorithms, low-level systems
@@ -142,6 +144,9 @@
                     trust in software systems.</h1>
             </div>
             <div class="w-[30%] flex flex-wrap justify-center items-center">
+                <div class="adjustment-heading lg:hidden">
+                    <br><br><br><br>
+                </div>
                 <div>
                     <canvas id="canvas"
                         class="lg:h-[500px] lg:w-[500px] md:w-[400px] md:h-[400px] h-[300px] w-[300px]"></canvas>
@@ -221,22 +226,22 @@
 
     <div id="education" class="lg:mx-[150px] lg:my-[100px] lg:p-[10px]">
         <br><br><br><br>
-        <h1 class="lg:text-[4rem] text-[2.5rem] lg:text-none text-center lg:py-[50px]">Education</h1>
+        <h1 class="lg:text-[4rem] text-[2.5rem] lg:text-left text-center lg:py-[50px]">Education</h1>
         <ul>
             <li class="w-[100%]">
-                <h1 class="lg:text-[3rem] text-wrap text-[2.5rem] font-bolder lg:text-none text-center">University Of
-                    Asia Pacific</h1>
-                <h1 class="text-[2rem] text-wrap font-bolder lg:text-none text-center">Bachelor of Science in Computer
+                <h1 class="lg:text-[3rem] text-wrap text-[2.5rem] font-bolder lg:text-left text-center">University Of
+                    Asia Pacific, Dhaka, Bangladesh</h1>
+                <h1 class="text-[2rem] text-wrap font-bolder lg:text-left text-center">Bachelor of Science in Computer
                     Science and Engineering
                 </h1>
-                <h1 class="text-[1.5rem] text-wrap font-bolder lg:text-none text-center">July 2023- Ongoing</h1>
+                <h1 class="text-[1.5rem] text-wrap font-bolder lg:text-left text-center">July 2023- Ongoing</h1>
             </li>
             <hr class="w-[100%] mx-auto my-[20px]" />
             <li class="w-[100%] m-auto">
-                <h1 class="lg:text-[3rem] text-wrap text-[2.5rem] font-bolder lg:text-none text-center">Cantonment
-                    Public School and College, Rangpur</h1>
-                <h1 class="text-[2rem] text-wrap font-bolder lg:text-none text-center">Higher Secondary</h1>
-                <h1 class="text-[1.5rem] text-wrap font-bolder lg:text-none text-center">July 2019-December 2021</h1>
+                <h1 class="lg:text-[3rem] text-wrap text-[2.5rem] font-bolder lg:text-left text-center">Cantonment
+                    Public School and College, Rangpur, Bangladesh</h1>
+                <h1 class="text-[2rem] text-wrap font-bolder lg:text-left text-center">Higher Secondary</h1>
+                <h1 class="text-[1.5rem] text-wrap font-bolder lg:text-left text-center">July 2019-December 2021</h1>
             </li>
 
 
@@ -245,9 +250,9 @@
     <div id="projects" class="lg:mx-[150px] lg:my-[100px] lg:p-[10px]">
         <br><br><br><br>
         <h1 class="lg:text-[4rem] lg:text-none text-center text-[2.5rem] py-[50px]">Projects</h1>
-        <div class="flex lg:flex-row flex-col flex-wrap gap-[10px] justify-center">
-            <a href="https://github.com/Arannamoy-Mondal/qrent" target="_blank" class="lg:m-[0px] m-[5px]">
-                <div class="border-[1px] border-[blue]  w-96 h-[350px]">
+        <div class="flex lg:flex-row  flex-col flex-wrap gap-[10px] justify-center">
+            <a href="https://github.com/Arannamoy-Mondal/qrent" target="_blank">
+                <div class="border-[1px] border-[blue]  lg:w-96 h-[450px] w-[95%] mx-auto">
                     <div class="card-body">
                         <h2 class="card-title">QRent</h2>
                         <p><span class="font-bold">Rental Management Platform</span> </br>
@@ -274,12 +279,26 @@
                                 <img src="./Icon/DRF.png" class="w-[20px] h-[20px] rounded-[20%]" alt="">
                                 <h1>Django Rest Framework</h1>
                             </div>
+                            <div>
+                                <canvas id="canvasp1" class="h-[50px] w-[50px]"></canvas>
+                                <script type="module">
+                                    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+                                    new DotLottie({
+                                        autoplay: true,
+                                        loop: true,
+                                        canvas: document.getElementById("canvasp1"),
+                                        src: "./Lottie/GitHub icon.lottie",
+                                    });
+                                </script>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </a>
-            <a href="https://github.com/Arannamoy-Mondal/Your-Library" target="_blank" class="lg:m-[0px] m-[5px]">
-                <div class="border-[1px] border-[blue]  w-96 h-[350px]">
+            <a href="https://github.com/Arannamoy-Mondal/Your-Library" target="_blank">
+                <div class="border-[1px] border-[blue]  lg:w-96 h-[450px] w-[95%] mx-auto">
                     <div class="card-body">
                         <h2 class="card-title">Your Library</h2>
                         <p><span class="font-bold">Library Management System</span> </br>
@@ -301,13 +320,28 @@
                                 <img src="./Icon/django.png" class="w-[20px] h-[20px] rounded-[20%]" alt="">
                                 <h1>Django</h1>
                             </div>
+                            <div>
+                                <canvas id="canvasp2" class="h-[50px] w-[50px]"></canvas>
+                                <script type="module">
+                                    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+                                    new DotLottie({
+                                        autoplay: true,
+                                        loop: true,
+                                        canvas: document.getElementById("canvasp2"),
+                                        src: "./Lottie/GitHub icon.lottie",
+                                    });
+                                </script>
+                            </div>
                         </div>
+
                     </div>
                 </div>
+
             </a>
-            <a href="https://github.com/Arannamoy-Mondal/Event-Management-Project-Using-Java-and-JavaFX" target="_blank"
-                class="lg:m-[0px] m-[5px]">
-                <div class="border-[1px] border-[blue]  w-96 h-[350px]">
+            <a href="https://github.com/Arannamoy-Mondal/Event-Management-Project-Using-Java-and-JavaFX"
+                target="_blank">
+                <div class="border-[1px] border-[blue]  lg:w-96 h-[450px] w-[95%] mx-auto">
                     <div class="card-body">
                         <h2 class="card-title">Event Management System</h2>
                         <p>
@@ -324,12 +358,26 @@
                                 <img src="./Icon/JavaFx.png" class="w-[20px] h-[20px] rounded-[20%]" alt="">
                                 <h1>JavaFX</h1>
                             </div>
+                            <div>
+                                <canvas id="canvasp3" class="h-[50px] w-[50px]"></canvas>
+                                <script type="module">
+                                    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+                                    new DotLottie({
+                                        autoplay: true,
+                                        loop: true,
+                                        canvas: document.getElementById("canvasp3"),
+                                        src: "./Lottie/GitHub icon.lottie",
+                                    });
+                                </script>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </a>
-            <a href="https://github.com/Arannamoy-Mondal/PHW-A-9" target="_blank" class="lg:m-[0px] m-[5px]">
-                <div class="border-[1px] border-[blue]  w-96 h-[350px]">
+            <a href="https://github.com/Arannamoy-Mondal/PHW-A-9" target="_blank">
+                <div class="border-[1px] border-[blue]  lg:w-96 h-[450px] w-[95%] mx-auto">
                     <div class="card-body">
                         <h2 class="card-title">Winter Clothing Donation Platform
                         </h2>
@@ -357,12 +405,26 @@
                                 <img src="./Icon/Firebase.png" class="w-[20px] h-[20px] rounded-[50%]" alt="">
                                 <h1>Firebase</h1>
                             </div>
+                            <div>
+                                <canvas id="canvasp4" class="h-[50px] w-[50px]"></canvas>
+                                <script type="module">
+                                    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+                                    new DotLottie({
+                                        autoplay: true,
+                                        loop: true,
+                                        canvas: document.getElementById("canvasp4"),
+                                        src: "./Lottie/GitHub icon.lottie",
+                                    });
+                                </script>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </a>
-            <a href="https://github.com/Arannamoy-Mondal/PHW-A-10-Frontend" target="_blank" class="lg:m-[0px] m-[5px]">
-                <div class="border-[1px] border-[blue]  w-96 h-[350px]">
+            <a href="https://github.com/Arannamoy-Mondal/PHW-A-10-Frontend" target="_blank">
+                <div class="border-[1px] border-[blue]  lg:w-96 h-[450px] w-[95%] mx-auto">
                     <div class="card-body">
                         <h2 class="card-title">Crowdcude - Crowd Funding Platform
                         </h2>
@@ -405,12 +467,26 @@
                                 <img src="./Icon/Firebase.png" class="w-[20px] h-[20px] rounded-[50%]" alt="">
                                 <h1>Firebase</h1>
                             </div>
+                            <div>
+                                <canvas id="canvasp5" class="h-[50px] w-[50px]"></canvas>
+                                <script type="module">
+                                    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+                                    new DotLottie({
+                                        autoplay: true,
+                                        loop: true,
+                                        canvas: document.getElementById("canvasp5"),
+                                        src: "./Lottie/GitHub icon.lottie",
+                                    });
+                                </script>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </a>
-            <a href="https://github.com/Arannamoy-Mondal/PHW-A-10-Frontend" target="_blank" class="lg:m-[0px] m-[5px]">
-                <div class="border-[1px] border-[blue]  w-96 h-[350px]">
+            <a href="https://github.com/Arannamoy-Mondal/PHW-A-10-Frontend" target="_blank">
+                <div class="border-[1px] border-[blue]  lg:w-96 h-[450px] w-[95%] mx-auto">
                     <div class="card-body">
                         <h2 class="card-title">My Portfolio
                         </h2>
@@ -441,13 +517,27 @@
                                 <img src="./Icon/JS.png" class="w-[20px] h-[20px] rounded-[50%]" alt="">
                                 <h1>JavaScript</h1>
                             </div>
+                            <div>
+                                <canvas id="canvasp6" class="h-[50px] w-[50px]"></canvas>
+                                <script type="module">
+                                    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+                                    new DotLottie({
+                                        autoplay: true,
+                                        loop: true,
+                                        canvas: document.getElementById("canvasp6"),
+                                        src: "./Lottie/GitHub icon.lottie",
+                                    });
+                                </script>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </a>
 
         </div>
-        <div class="flex justify-center py-[25px]">             
+        <div class="flex justify-center py-[25px]">
             <a href="https://github.com/Arannamoy-Mondal/" target="_blank" class="mx-auto">
                 <button class="btn btn-primary">More Projects</button>
             </a>
@@ -457,10 +547,11 @@
     <div id="contact-me" class="lg:mx-[150px] lg:my-[100px] lg:p-[10px]">
         <br><br><br><br>
         <h1 class="lg:text-[4rem] text-[2.5rem] text-wrap py-[50px] lg:text-none text-center">Connect With Me</h1>
- 
+
         <div class="flex lg:flex-row flex-col-reverse flex-wrap w-[100%]">
-            <div class="lg:w-[50%] w-[100%]">
-                <h1 class="lg:text-[2.5rem] text-[.5rem] text-wrap lg:text-none text-center">Feel free to reach out for collaboration, project opportunities, or
+            <div class="lg:w-[50%] w-[90%] mx-auto">
+                <h1 class="lg:text-[2.5rem] text-[1rem] text-wrap lg:text-none text-center">Feel free to reach out for
+                    collaboration, project opportunities, or
                     just to connect over shared interests in
                     advanced technologies.
 
@@ -486,7 +577,7 @@
 
                 </div>
             </div>
-            <div class="flex items-center w-[50%]">
+            <div class="lg:flex hidden items-center w-[50%]">
                 <div class="w-[50%] absolute">
                     <div>
                         <canvas id="canvasf1" class="h-[100%] w-[100%]"></canvas>
@@ -521,7 +612,33 @@
     </div>
     <footer>
         <div class="flex justify-center py-[25px]">
-            <h1 class="font-bold lg:text-[2rem] text-[.8rem] lg:text-none text-center text-stone-600">Grazie for visiting my portfolio</h1>
+            <button onclick=thanksForVisitingMyPortfolio(event)
+                class="font-bold lg:text-[2rem] text-[.8rem] lg:text-none text-center text-stone-600">Grazie for
+                visiting my portfolio</button>
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                    <div class="text-lg font-bold">
+                        <canvas id="canvasmodal1" class="h-[350px] w-[350px]"></canvas>
+                        <script type="module">
+                            import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+                            new DotLottie({
+                                autoplay: true,
+                                loop: true,
+                                canvas: document.getElementById("canvasmodal1"),
+                                src: "./Lottie/Man Working on Laptop.lottie",
+                            });
+                        </script>
+                    </div>
+                    <p class="py-4 mx-auto text-center text-[2rem] font-bold">Thank you For Visiting My Portfolio.</p>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </div>
     </footer>
     <script src="./script.js"></script>
