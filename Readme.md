@@ -1,1 +1,1 @@
-# URL -> <a href="arannamoy-mondal.github.com">arannamoy-mondal.github.com</a>, <a href="aranna.netlify.com">aranna.netlify.com</a>, <a href="arannamoymondal.netlify.com">arannamoymondal.netlify.com</a>
+# URL -> <a href="arannamoy-mondal.github.io">arannamoy-mondal.github.io</a>, <a href="aranna.netlify.app">aranna.netlify.app</a>, <a href="arannamoymondal.netlify.app">arannamoymondal.netlify.app</a>
